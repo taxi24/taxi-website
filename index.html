@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Servicio de Taxi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            overflow-x: hidden; /* Evita el scroll horizontal */
+        }
+        header {
+            background-color: #ffcc00; /* Amarillo taxi */
+            color: black;
+            padding: 5px 10px; /* Reducido para ahorrar espacio */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px; /* Reducida la altura del encabezado */
+            position: fixed; /* Fija el encabezado en la parte superior */
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000; /* Asegura que el encabezado esté encima del resto del contenido */
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2em; /* Aumentado para mayor visibilidad */
+        }
+        .content {
+            max-width: 800px;
+            margin: 70px auto 20px auto; /* Mueve el contenido hacia abajo, compensando la altura del encabezado y el margen inferior */
+            padding: 10px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding-left: 20px; /* Reducido para ahorrar espacio */
+            padding-right: 20px; /* Añadido padding para el alineamiento */
+            box-sizing: border-box; /* Incluye padding y border en el ancho total */
+        }
+        h2 {
+            color: #333;
+            font-size: 1.8em; /* Aumentado para mayor visibilidad */
+        }
+        p {
+            font-size: 1.2em; /* Aumentado para mayor legibilidad */
+            line-height: 1.4; /* Comprimido para ahorrar espacio */
+            color: #555;
+        }
+        .taxi-image {
+            max-width: 100%; /* Mantiene la imagen dentro del contenedor */
+            height: auto;
+            display: block;
+            margin: 10px auto; /* Reducido el margen para ahorrar espacio */
+            border-radius: 8px;
+            max-height: 300px; /* Limita la altura máxima de la imagen */
+        }
+        .contact-info-bottom {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            font-size: 1em; /* Aumentado para mayor legibilidad */
+            text-align: center;
+            margin-top: 10px; /* Reducido el margen para ahorrar espacio */
+        }
+        footer {
+            text-align: center;
+            padding: 2px; /* Reducido al mínimo */
+            background-color: #333;
+            color: white;
+            font-size: 0.8em; /* Ligeramente aumentado para legibilidad */
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            box-sizing: border-box; /* Incluye padding en el ancho total */
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Servicio de Taxi Rápido</h1>
+    </header>
+
+    <div class="content">
+        <h2>Quiénes Somos</h2>
+        <p>Ofrecemos un servicio de taxi confiable y rápido para todas tus necesidades de transporte en la ciudad. Estamos disponibles las 24 horas del día, los 7 días de la semana, garantizando siempre puntualidad y comodidad.</p>
+        
+        <h2>Nuestros Servicios</h2>
+        <p>Desde el transporte urbano hasta el servicio aeroportuario, estamos listos para llevarte a tu destino de manera segura y rápida. ¡Reserva hoy tu taxi con nosotros!</p>
+        
+        <!-- Imagen del taxi -->
+        <img src="taxi.jpg" alt="Servicio de Taxi" class="taxi-image">
+        
+        <!-- Contactos debajo de la imagen -->
+        <div class="contact-info-bottom">
+            <p>Teléfono: <strong>+34 650 363 418</strong></p>
+            <p>Correo electrónico: <strong>taxi24.jonquera@gmail.com</strong></p>
+            <p>Dirección: <strong>Carrer Carles Bosh Trinxeria 8 La Jonquera 17700 Girona</strong></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Servicio de Taxi Rápido. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
